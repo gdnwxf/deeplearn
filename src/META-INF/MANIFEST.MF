@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: jaas.jar jnet.jar jsse.jar mx4j.jar jcert.jar servlet.jar 
+ xercesImpl.jar tomcat-util.jar naming-common.jar xmlParserAPIs.jar co
+ mmons-daemon.jar naming-factory.jar commons-logging.jar commons-model
+ er.jar commons-digester.jar naming-resources.jar commons-beanutils.ja
+ r jakarta-regexp-1.2.jar commons-collections.jar
+Main-Class: com.wch.test.LoaderTest
+
