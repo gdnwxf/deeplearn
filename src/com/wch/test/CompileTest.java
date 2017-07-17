@@ -5,6 +5,13 @@ package com.wch.test;
  */
 public class CompileTest {
 
+    public static String name = "compiletest" ;
+
+
+    static {
+        System.out.println("类加载的时候执行");
+    }
+
 
 
     public String deCode(String code) {
@@ -20,4 +27,9 @@ public class CompileTest {
         }
         return  temp;
     }
+
+    public static void dowork() {
+        System.out.println(" 开始工作 ");
+    }
+
 }

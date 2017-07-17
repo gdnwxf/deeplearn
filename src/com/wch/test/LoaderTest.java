@@ -9,7 +9,7 @@ import com.sun.nio.zipfs.ZipPath;
 public class LoaderTest {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         System.out.println(Integer.class.getClassLoader());
         System.out.println(String.class.getClassLoader());
         System.out.println(int.class.getClassLoader());
@@ -22,6 +22,15 @@ public class LoaderTest {
         System.out.println(appClassLoader.getParent());
         System.out.println(appClassLoader.getParent().getParent());
         System.out.println(ZipPath.class.getClassLoader());
+
+        System.out.println(CompileTest.name);
+
+        System.out.println("-------------------");
+
+        Class<?> aClass = Class.forName("com.wch.test.CompileTest");
+        System.out.println(aClass);
+        System.out.println();
+
 
     }
 }
