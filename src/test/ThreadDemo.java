@@ -12,6 +12,7 @@ public class ThreadDemo extends Thread {
 
   public static void main(String[] args) {
     ThreadDemo demo = new ThreadDemo();
+    demo.setDaemon(true);
     demo.start();
   }
 }
